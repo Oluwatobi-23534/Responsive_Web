@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: ghostwhite;
+    font-family: 'Arapey', serif;
+}
+
+.navbar {
+    position: relative;
+    width:100%;
+    height: 60px;
+    background-color: #004540;
+    color: #efebce;
+    margin: 10px auto;
+}
+.navbar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.navlinks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navlinks li {
+    float: left;
+    margin: 5px 10px;
+    padding: 5px;
+}
+
+.navlinks li:hover {
+    background-color: #ff0831;
+}
+
+.navlinks li a {
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.logo {
+    float: right;
+    margin: 5px;
+    font-size: 2em;
+    color: greenyellow;
+}
+
+.barMenu {
+    float: left;
+    display: none;
+    margin: 10px 15px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.header {
+    text-align: center;
+    font-size: 2.5em;
+    padding: 40px;
+    background-color: #3a0ca3;
+    color: lime;
+}
+
+.col {
+    width: 100%;
+    float: left;
+    padding: 10px;
+    min-height: 200px;
+    text-align: left;
+}
+
+.col-3{
+    width: 33.33%;
+}
+.col-2{
+    width: 50%;
+}
+.col-4{
+    width: 25%;
+}
+
+.thumb {
+    max-width: 100%;
+    border: 1px silver;
+}
+
+.para {
+    padding: 5px;
+    text-align: justify;
+}
+
+.container footer {
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #004540;
+    color: white;
+    padding: 5px;
+}
+
+.container {
+    font-size: 0.9em;
+    margin: 10px;
+    background-color: silver;
+    color: #0000ff;
+}
+
+.col h2 {
+    text-align: center;
+    background-color: #3a0ca3;
+    text-transform: uppercase;
+    color: white;
+    padding: 5px;
+}
+
+.main:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #3a0ca3;
+    color: greenyellow;
+}
+
+
+
+
+
+
+@media screen  and (max-width:960px) {
+    .logo {
+        float: 1.5em;
+    }
+    .navlinks li a {
+        font-size: 1em;
+    }
+    .navlinks li {
+        margin: 5px;
+        padding: 0;
+    }
+}
+
+@media screen  and (max-width:700px) {
+    .col {
+        width: 100%;
+    }
+    .barMenu {
+        display: block;
+    }
+    .navlinks {
+        display: none;
+    }
+    .navlinks li {
+        width: 100%;
+        text-align: center;
+        margin: 0 !important;
+        background-color: #65747b;
+        font-size: 1.4em;
+    }
+    .navbar {
+        width:100%;
+    }
+    .logo {
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+        margin: auto;
+        background-color: #004540;
+    }
+}
